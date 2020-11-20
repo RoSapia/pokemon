@@ -11,48 +11,64 @@ body {
     font-size: 14pt;
 }
 
-/*Classes*/
-
-.menu {
-    list-style: none;
-    width: 100%;
-}
-
-.menu ul {
+ul {
     display: flex;
     text-align: center;
 }
 
-.menu li {
+li {
     position: relative;
     float: left;
-    padding: 30px;
-    transition: background-color .2s linear;
-    border: solid 1px transparent;
+    padding: 20px;
+    height: 30px;
+    width:100%;
+    vertical-align: center;
 }
 
-.menu a {
+a {
     text-decoration: none;
     color: #fff;
 }
 
-.menu ul li:hover {
-    border:solid 1px #fff;
-    background-color: transparent !important;
+li:hover {
+    /*border:solid 1px #fff;*/
+    background-color: rgb(175, 169, 169) !important;
     cursor:pointer;
 }
 
-@media (max-width:520px){
-    .menu ul{
+@media (max-width:960px){
+    body{
         display: block;
     }
+}
+
+nav {
+    top:0;
+    right:0;
+    width:100%
+}
+
+/*Classes*/
+
+.menu {
+    list-style: none;
+}
+
+.imagem-topo {
+    width:100%;
+}
+.conteudo p{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(74, 179, 71);
+    color: #fff;
 }
 
 
 /*IDs*/
 
-#lendarios {
-    background-color: #5CB8FF;
+#lendarios{
+    background-color: #5CB8FF;  
 }
 
 #comuns {
