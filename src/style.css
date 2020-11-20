@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Tags*/
+
+body {
+    font-family: "Noto Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+/*Classes*/
+
+.menu {
+    list-style: none;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    text-align: center;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    padding: 30px;
+    transition: background-color .2s linear;
+    border: solid 1px transparent;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu ul li:hover {
+    border:solid 1px #fff;
+    background-color: transparent !important;
+    cursor:pointer;
+}
+
+@media (max-width:520px){
+    .menu ul{
+        display: block;
+    }
+}
+
+
+/*IDs*/
+
+#lendarios {
+    background-color: #5CB8FF;
+}
+
+#comuns {
+    background-color: #ff6600;
+}
+#pokedex {
+    background-color: #ffe00f;
+}
