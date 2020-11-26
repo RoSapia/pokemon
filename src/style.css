@@ -1,79 +1,81 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-/*Tags*/
-
-body {
+  }
+  
+  /*Tags*/
+  
+  body {
     font-family: "Noto Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 14pt;
-}
-
-ul {
+  }
+  
+  ul {
     display: flex;
     text-align: center;
-}
-
-li {
+  }
+  
+  li {
     position: relative;
     float: left;
     padding: 20px;
     height: 30px;
     width:100%;
     vertical-align: center;
-}
-
-a {
+  }
+  
+  a {
     text-decoration: none;
     color: #fff;
-}
-
-li:hover {
+  }
+  
+  li:hover {
     /*border:solid 1px #fff;*/
     background-color: rgb(175, 169, 169) !important;
     cursor:pointer;
-}
-
-@media (max-width:960px){
+  }
+  
+  @media (max-width:960px){
     body{
         display: block;
     }
-}
-
-nav {
+  }
+  
+  nav {
     top:0;
     right:0;
     width:100%
-}
-
-/*Classes*/
-
-.menu {
+  }
+  
+  /*Classes*/
+  
+  .menu {
     list-style: none;
-}
-
-.imagem-topo {
+  }
+  
+  .imagem-topo {
     width:100%;
-}
-.conteudo p{
+  }
+  .descricao {
     text-align: center;
     padding: 10px;
     background-color: rgb(74, 179, 71);
     color: #fff;
-}
-
-
-/*IDs*/
-
-#lendarios{
+  }
+  
+  .lendarios{
     background-color: #5CB8FF;  
-}
-
-#comuns {
+  }
+  
+  .comuns {
     background-color: #ff6600;
-}
-#pokedex {
+  }
+  .pokedex {
     background-color: #ffe00f;
-}
+  }
+  
+  
+  /*IDs*/
+  
+  
