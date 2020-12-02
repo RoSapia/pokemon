@@ -7,27 +7,20 @@
   
   body {
     font-family: "Noto Sans", Arial, sans-serif;
-    font-weight: bold;
     font-size: 14pt;
   }
   
-  ul {
-    display: flex;
-    text-align: center;
-  }
-  
   li {
-    position: relative;
-    float: left;
-    padding: 20px;
-    height: 30px;
-    width:100%;
-    vertical-align: center;
+    display: inline-block;
   }
   
   a {
+    text-align: center;
     text-decoration: none;
     color: #fff;
+    padding: 20px;
+    height: 30px;
+    vertical-align: center;
   }
   
   li:hover {
@@ -38,15 +31,23 @@
   
   @media (max-width:960px){
     body{
-        display: block;
+        display: flex;
     }
   }
   
   nav {
-    top:0;
-    right:0;
-    width:100%
+    width:100wh;
+    font-weight: bold;
   }
+
+  article {
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+    border: solid 1px
+  }
+
   
   /*Classes*/
   
@@ -60,6 +61,7 @@
   .descricao {
     text-align: center;
     padding: 10px;
+    font-weight: bold;
     background-color: rgb(74, 179, 71);
     color: #fff;
   }
@@ -74,8 +76,12 @@
   .pokedex {
     background-color: #ffe00f;
   }
-  
+
   
   /*IDs*/
-  
+  #ob-menu{
+    width:100%;
+    margin:0px;
+    padding:0px;
+  }
   
