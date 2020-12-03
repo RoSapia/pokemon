@@ -4,20 +4,24 @@ import data from './data/pokemon/pokemon.js';
 
 
 const lendarios = pokemon.filtrarLendarios(data)
+const calculo = pokemon.calculoAgregado(data,lendarios)
+document.getElementById("calculo").innerHTML = calculo
 
 function geraCards(arrayPokemons) {
   let card = ""
   for (let pokemon of arrayPokemons) {
     card += `
-        <article class="divcard">
+        <article class="divcardlendario">
 
         <p class="num">${pokemon.num}</p>
         <p class="name">${pokemon.name}</p>
         <img src="${pokemon.img}">
-        <p class="texto-card">Height:     ${pokemon.size.height}</p>
-        <p class="texto-card">Weight:     ${pokemon.size.weight}</p>
-        <p class="texto-card">Type:       ${pokemon.type}</p>
-        <p class="texto-card">Weaknesses: ${pokemon.weaknesses}</p>
+        <p class="texto-card-lendario">About: ${pokemon.about}</p>
+        <p class="texto-card-lendario">Height: ${pokemon.size.height}</p>
+        <p class="texto-card-lendario">Height: ${pokemon.size.height}</p>
+        <p class="texto-card-lendario">Weight: ${pokemon.size.weight}</p>
+        <p class="texto-card-lendario">Type: ${pokemon.type}</p>
+        <p class="texto-card-lendario">Weaknesses: ${pokemon.weaknesses}</p>
         <br>
         </article>`
   }
@@ -25,9 +29,10 @@ function geraCards(arrayPokemons) {
 }
 
 function exibeCards(arrayPokemon) {
-  const cardsPokemon = document.getElementById("tabela-resultado")
+  const cardsPokemon = document.getElementById("tabresult-lendario")
   cardsPokemon.innerHTML = ""
   cardsPokemon.innerHTML = geraCards(arrayPokemon)
 }
+//calculoAgregado(calculo)
 exibeCards(lendarios)
 

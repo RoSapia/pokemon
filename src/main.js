@@ -13,7 +13,7 @@ pesquisa.addEventListener("click", function (evt) {
 
 const select = document.getElementById("ordenar")
 select.addEventListener("change", selecionaOrdem)
-function selecionaOrdem(){
+function selecionaOrdem() {
   const valorOpcao = document.getElementById("ordenar").value
   const pokemonsResultado = pokemon.ordenarPokemon(data.pokemon, valorOpcao)
   exibeCards(pokemonsResultado)

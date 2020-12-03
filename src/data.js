@@ -13,21 +13,30 @@ const pokemon = {
     const listaPokemon = data.pokemon
     const lendarios = listaPokemon.filter(p => p['pokemon-rarity'] === 'legendary')
     console.log(lendarios)
-    return (lendarios)
+    return (lendarios) 
   },
-  ordenarPokemon(pokemons, valorOpcao){
-    console.log(pokemons)
-    if (valorOpcao == 'az') {
-      pokemons = pokemons.sort(function(a,b) {
-        return a.name.localeCompare(b.name)
-    })
-    } else {
-      pokemons = pokemons.sort(function(a,b) {
-        return b.name.localeCompare(a.name)
-    })
-    }
+  calculoAgregado(data, lendarios){
+    const quantLendarios = lendarios.length
+    const listaPokemon = data.pokemon
+    const quantPokemons = listaPokemon.length
+    const porcLendarios = (quantLendarios*100)/quantPokemons
+    console.log(porcLendarios)
     
-  return pokemons
+    return (porcLendarios.toFixed(1))
+  },
+
+  ordenarPokemon(pokemons, valorOpcao) {
+    if (valorOpcao == 'az') {
+      pokemons = pokemons.sort(function (a, b) {
+        return a.name.localeCompare(b.name)
+      })
+    } else {
+      pokemons = pokemons.sort(function (a, b) {
+        return b.name.localeCompare(a.name)
+      })
+    }
+
+    return pokemons
   }
 }
 
