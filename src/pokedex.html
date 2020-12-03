@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,16 +18,16 @@
                     </a>
                 </li>
                 <li class="botao lendarios" id="lendarios">
-                    <a href="#pokemons-lendarios">
+                    <a href="lendario.html">
                         Pokémons lendários
                     </a>
                 </li>
-                <li class="botao comuns" id="comuns">
+                <li class="botao calculo" id="calculo">
                     <a href="#pokemons-mais-encontrados">
-                        Pokémons mais encontrados
+                      Cálculo agregado
                     </a>
                 </li>
-                <li class="botao pokedex" >
+                <li class="botao pokedex">
                     <a id="pokedex" href="pokedex.html">
                         Pokédex
                     </a>
@@ -45,51 +46,18 @@
             <input type="text" id="pesquisa-pokemon" class="pesquisa-pokemon" name="nome-pokemon">
             <button id="pesquisar" name="pesquisar">Pesquisar</button>
 
-            <label for="filtrar-pokemon">Tipo</label>
+            <label for="ordenar-por">Ordenar por</label>
+            <select id="ordenar" name="select-ordem">
+                <option value="az" selected> A - Z </option>
+                <option value="za"> Z - A </option>
+            </select>
 
         </form>
+        <br>
+
+        <br>
         <section id="tabela-resultado">
         </section>
-       <!--<table class="dados-pokemon">
-            <tbody>
-                <tr>
-                    <td colspan="2">
-                        <img id="imagem-pokemon">
-                    </td>
-                </tr>
-                <tr>
-                    <th id="numero-pokemon">
-                    </th>
-                    <td id="nome-pokemon">
-                    </td>
-                </tr>
-                <tr>
-                    <th id="altura">
-                    </th>
-                    <td id="altura-pokemon">
-                    </td>
-                </tr>
-                <tr>
-                    <th id="peso">
-                    </th>
-                    <td id="peso-pokemon">
-                    </td>
-                </tr>
-                <tr>
-                    <th id="tipo">
-                    </th>
-                    <td id="tipo-pokemon">
-                    </td>
-                </tr>
-                <tr>
-                    <th id="fraqueza">
-                    </th>
-                    <td id="fraqueza-pokemon">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-      -->  
     </main>
     <script src="main.js" type="module"></script>
 </body>

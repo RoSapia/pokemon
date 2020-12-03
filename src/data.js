@@ -14,6 +14,20 @@ const pokemon = {
     const lendarios = listaPokemon.filter(p => p['pokemon-rarity'] === 'legendary')
     console.log(lendarios)
     return (lendarios)
+  },
+  ordenarPokemon(pokemons, valorOpcao){
+    console.log(pokemons)
+    if (valorOpcao == 'az') {
+      pokemons = pokemons.sort(function(a,b) {
+        return a.name.localeCompare(b.name)
+    })
+    } else {
+      pokemons = pokemons.sort(function(a,b) {
+        return b.name.localeCompare(a.name)
+    })
+    }
+    
+  return pokemons
   }
 }
 

@@ -2,24 +2,8 @@ import pokemon from './data.js';
 
 import data from './data/pokemon/pokemon.js';
 
-const pesquisa = document.getElementById("pesquisar")
-pesquisa.addEventListener("click", function (evt) {
-  evt.preventDefault()
-  const textoPesquisa = document.getElementById("pesquisa-pokemon").value
-  const resultado = pokemon.pesquisaPokemon(data, textoPesquisa.toString().toLowerCase())
-  exibeCards(resultado)
-})
 
-
-const select = document.getElementById("ordenar")
-select.addEventListener("change", selecionaOrdem)
-function selecionaOrdem(){
-  const valorOpcao = document.getElementById("ordenar").value
-  const pokemonsResultado = pokemon.ordenarPokemon(data.pokemon, valorOpcao)
-  exibeCards(pokemonsResultado)
-
-}
-
+const lendarios = pokemon.filtrarLendarios(data)
 
 function geraCards(arrayPokemons) {
   let card = ""
@@ -45,5 +29,5 @@ function exibeCards(arrayPokemon) {
   cardsPokemon.innerHTML = ""
   cardsPokemon.innerHTML = geraCards(arrayPokemon)
 }
-exibeCards(data.pokemon)
+exibeCards(lendarios)
 
