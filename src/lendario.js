@@ -2,7 +2,6 @@ import pokemon from './data.js';
 
 import data from './data/pokemon/pokemon.js';
 
-
 const lendarios = pokemon.filtrarLendarios(data)
 const calculo = pokemon.calculoAgregado(data,lendarios)
 document.getElementById("calculo").innerHTML = calculo
@@ -12,17 +11,14 @@ function geraCards(arrayPokemons) {
   for (let pokemon of arrayPokemons) {
     card += `
         <article class="divcardlendario">
-
-        <p class="num">${pokemon.num}</p>
-        <p class="name">${pokemon.name}</p>
-        <img src="${pokemon.img}">
-        <p class="texto-card-lendario">About: ${pokemon.about}</p>
-        <p class="texto-card-lendario">Height: ${pokemon.size.height}</p>
-        <p class="texto-card-lendario">Height: ${pokemon.size.height}</p>
-        <p class="texto-card-lendario">Weight: ${pokemon.size.weight}</p>
-        <p class="texto-card-lendario">Type: ${pokemon.type}</p>
-        <p class="texto-card-lendario">Weaknesses: ${pokemon.weaknesses}</p>
-        <br>
+          <p class="num">${pokemon.num}</p>
+          <p class="name">${pokemon.name}</p>
+          <img src="${pokemon.img}">
+          <p class="texto-card-lendario">About: ${pokemon.about}</p>
+          <p class="texto-card-lendario">Height: ${pokemon.size.height}</p>
+          <p class="texto-card-lendario">Weight: ${pokemon.size.weight}</p>
+          <p class="texto-card-lendario">Type: ${pokemon.type}</p>
+          <p class="texto-card-lendario">Weaknesses: ${pokemon.weaknesses}</p>
         </article>`
   }
   return card

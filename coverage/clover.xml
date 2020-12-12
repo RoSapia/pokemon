@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1607180128151" clover="3.2.0">
+  <project timestamp="1607180128151" name="All files">
+    <metrics statements="24" coveredstatements="24" conditionals="4" coveredconditionals="4" methods="8" coveredmethods="8" elements="36" coveredelements="36" complexity="0" loc="24" ncloc="24" packages="3" files="3" classes="3"/>
+    <package name="src">
+      <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="8" coveredmethods="8"/>
+      <file name="data.js" path="/home/roberta/Área de Trabalho/laboratoria/SAP005-data-lovers/src/data.js">
+        <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="8" coveredmethods="8"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="502" type="stmt"/>
+        <line num="6" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="251" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="25" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1916" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="2020" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.data.pokemon">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="pokemon.js" path="/home/roberta/Área de Trabalho/laboratoria/SAP005-data-lovers/src/data/pokemon/pokemon.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="test">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="tests_const.js" path="/home/roberta/Área de Trabalho/laboratoria/SAP005-data-lovers/test/tests_const.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
+        <line num="866" count="1" type="stmt"/>
+        <line num="25451" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

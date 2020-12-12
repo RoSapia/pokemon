@@ -22,11 +22,6 @@
                         Pokémons lendários
                     </a>
                 </li>
-                <!--<li class="botao calculo" id="calculo">
-                    <a href="#calculo">
-                        Cálculo agregado
-                    </a>
-                </li><-->
                 <li class="botao pokedex">
                     <a id="pokedex" href="pokedex.html">
                         Pokédex
@@ -36,12 +31,8 @@
         </nav>
     </header>
     <main>
-        <br>
-        <hr>
-        <br>
-        <p class="descricao">O Guia Ilustrado que vai te ajudar como treinador Pokémon Go! Aqui você vai saber mais
-            sobre os Pokémons da região de Kanto.</p>
-        <br>
+        <p class="descricao">O Guia Ilustrado que vai te ajudar como treinador Pokémon Go! Aqui você vai saber mais sobre os Pokémons da região de Kanto.</p>
+
         <form>
             <label for="pesquisa-pokemon">Procure aqui um Pokémon por nome</label>
             <input type="text" id="pesquisa-pokemon" class="pesquisa-pokemon" name="nome-pokemon">
@@ -49,20 +40,19 @@
 
             <label for="ordenar-por">Ordenar por</label>
             <select id="ordenar" name="select-ordem">
-                <option value="az" selected> A - Z </option>
+                <option value="vago" selected> Selecione </option>
+                <option value="az"> A - Z </option>
                 <option value="za"> Z - A </option>
             </select>
 
         </form>
-        <br>
-
-        <br>
         <section id="tabela-resultado">
         </section>
     </main>
     <footer>
-        Desenvolvido por <a href="https://github.com/Lucilaxavier" style="text-decoration:none" target="blank">@Lucila<a
-                href="https://github.com/RoSapia" style="text-decoration:none" target="blank">@Roberta</a>
+        <p>Desenvolvido por <a href="https://github.com/Lucilaxavier" style="text-decoration:none"
+                target="blank">@Lucila</a> e <a href="https://github.com/RoSapia" style="text-decoration:none"
+                target="blank">@Roberta</a></p>
     </footer>
     <script src="main.js" type="module"></script>
 </body>
